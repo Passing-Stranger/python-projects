@@ -31,7 +31,7 @@ def batch_resize_images():
         print(
             f"\nResized {len(image_paths)} images and saved to {output_folder}")
     else:
-        print("No images selected or output folder not chosen")
+        print("No images selected and/or output folder not chosen \nPlease try again.")
 
 
 if __name__ == "__main__":
