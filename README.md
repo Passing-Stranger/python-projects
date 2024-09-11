@@ -1,4 +1,3 @@
-````markdown
 # 🖼️ Batch Image Resizer
 
 <pre>
@@ -48,7 +47,6 @@
    ```bash
    pip install pillow tqdm
    ```
-````
 
 2. **Run the script:**
 
