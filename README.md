@@ -1,18 +1,33 @@
-```markdown
+````markdown
 # 🖼️ Batch Image Resizer
 
-```
-       _.-.
-     ,'/ //\
-    /// // /)
-   /// // //|
-  /// // ///
- /// // ///
-(`: // ///
- `;`: ///
-  / /  `"     
- (_/ 
-```
+<pre>
+          .?77777777777777$.                  .?77777777$.  
+          777..777777777777$+                 777.77777777$  
+         .77    7777777777$$$                .77   77777777$  
+         .777 .7777777777$$$$                .777  .7777777$  
+         .7777777777777$$$$$$               .7777777777777$  
+         ..........:77$$$$$$$               ..........:77$$$  
+  .77777777777777777$$$$$$$$$.=======.  .77777777777777777$$$$$.==.  
+ 777777777777777777$$$$$$$$$$.========  777777777777777777$$$$$$$.===  
+7777777777777777$$$$$$$$$$$$$.========= 7777777777777777$$$$$$$$$$$.===  
+77777777777777$$$$$$$$$$$$$$$.========= 77777777777777$$$$$$$$$$$$$$$.===  
+777777777777$$$$$$$$$$$$$$$$ :========+. 777777777777$$$$$$$$$$$$$$$$ :===  
+77777777777$$$$$$$$$$$$$$+..=========++~ 77777777777$$$$$$$$$$$$$$+..===+  
+777777777$$..~=====================+++++  777777777$$..~=================+++++  
+77777777$~.~~~~=~=================+++++.  77777777$~.~~~~=~===============+++++  
+777777$$$.~~~===================+++++++.  777777$$$.~~~================+++++++  
+77777$$$$.~~==================++++++++:   77777$$$$.~~================+++++++  
+ 7$$$$$$$.==================++++++++++.   7$$$$$$$.================+++.+++  
+ .,$$$$$$.================++++++++++~.    .,$$$$$$.===============++++++++.  
+         .=========~.........                .=========~...........   
+         .=============++++++               .=============++++++    
+         .===========+++..+++               .===========+++..+++   
+         .==========+++.  .++               .==========+++.  .++  
+          ,=======++++++,,++,               ,=======++++++,,++,  
+          ..=====+++++++++=.                ..=====+++++++++=.   
+                ..~+=...                        ..~+=...
+</pre>
 
 **Batch Image Resizer** is a Python script that allows you to select multiple images, resize them down by 50%, and save them with 100% quality. It also provides a loading bar and deletes the original images after resizing!
 
@@ -27,15 +42,16 @@
 ## 🚀 How to Use
 
 1. **Install required libraries:**
-   
+
    You need `PIL` (Pillow) for image processing and `tqdm` for the progress bar. You can install them using `pip`:
-   
+
    ```bash
    pip install pillow tqdm
    ```
+````
 
 2. **Run the script:**
-   
+
    Execute the Python script to batch resize your images:
 
    ```bash
@@ -73,13 +89,3 @@ Deleting originals: 100%|█████████████████| 5/
 The resized images will be stored in the selected output folder with the same filenames as the original images.
 
 Enjoy hassle-free image resizing! 🎉
-```
-
----
-
-This README has:
-- ASCII art at the top to give it a fun, creative look.
-- Clear instructions on installation and usage.
-- A clean file structure overview and examples to guide users.
-
-Feel free to add more details specific to your project!
