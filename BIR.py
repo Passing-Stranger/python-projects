@@ -9,7 +9,7 @@ def resize_image(image_path, output_folder):
         # Get current size
         width, height = img.size
         # Resize to 50% of original size
-        img_resized = img.resize((width // 10, height // 10))
+        img_resized = img.resize((width // 2, height // 2))
         # Save the resized image with 100% quality
         img_name = os.path.basename(image_path)
         img_resized.save(os.path.join(output_folder, img_name), quality=100)
@@ -25,16 +25,23 @@ def batch_resize_images():
     output_folder = filedialog.askdirectory(title="Select Output Folder")
 
     if image_paths and output_folder:
-        # Using tqdm for progress bar
+        print(f"Resizing {len(image_paths)} images...")
+        # First, resize all images
         for image_path in tqdm(image_paths, desc="Resizing images", unit="image"):
             resize_image(image_path, output_folder)
-            os.remove(image_path)
+
+        print(f"\nDeleting original files...")
+        # Then, delete the original images after resizing
+        for image_path in tqdm(image_paths, desc="Deleting originals", unit="file"):
+            os.remove(image_path)  # Delete the original image
+
         print(
-            f"\nResized and dealt with {len(image_paths)} images and saved to {output_folder}")
+            f"\nSuccessfully resized and deleted {len(image_paths)} original images. Resized files saved to {output_folder}")
     else:
-        print("No images selected and/or output folder not chosen \nPlease try again.")
+        print("No images selected or output folder not chosen")
 
 
 if __name__ == "__main__":
     batch_resize_images()
+
 # note i added line 30 to delete the og image after all, and i changed the ratio from 50% to 10%.
