@@ -87,3 +87,83 @@ Deleting originals: 100%|█████████████████| 5/
 The resized images will be stored in the selected output folder with the same filenames as the original images.
 
 Enjoy hassle-free image resizing! 🎉
+
+# Python Script Wrapper for PyInstaller
+
+Welcome to the **Python Script Wrapper** project! This tool simplifies the process of converting multiple Python scripts into standalone executables using `PyInstaller`. Perfect for batch processing or automation tasks.
+
+## 🛠️ Features
+
+- **Batch Processing:** Convert multiple Python scripts into executables with a single command.
+- **Automated Execution:** Automate the process of calling `PyInstaller` for each script.
+- **Custom Configuration:** Easily adjust and configure `PyInstaller` options for your needs.
+- **Error Handling:** Provides feedback if scripts do not exist or if there are errors during conversion.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Python**: Ensure Python is installed on your system.
+- **PyInstaller**: Install `PyInstaller` if it's not already installed. You can install it via pip:
+
+  ```bash
+  pip install pyinstaller
+  ```
+
+## Installation
+
+Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+Copy code
+git clone https://github.com/yourusername/python-script-wrapper.git
+cd python-script-wrapper
+```
+
+### Configure Scripts
+
+Add the names of the Python scripts you want to convert in the scripts list within wrapper.py.
+
+### Run the Wrapper
+
+Execute the wrapper.py script to convert your Python files:
+
+```bash
+python wrapper.py
+```
+
+This command will process each script listed in the scripts list and generate corresponding executables.
+
+## 💡 Usage
+
+Edit wrapper.py to include the Python scripts you want to convert. By default, the script includes placeholders for script1.py, script2.py, and script3.py. Modify this list according to your needs.
+
+Here is an example of how to configure wrapper.py:
+
+```python
+def main():
+    scripts = ["my_script1.py", "my_script2.py", "my_script3.py"]
+    for script in scripts:
+        if os.path.exists(script):
+            convert_to_exe(script)
+        else:
+            print(f"Script {script} does not exist.")
+```
+
+## ⚙️ Customization
+
+You can adjust the convert_to_exe function in wrapper.py to include additional PyInstaller options. For instance, you can change the --onefile flag to include other options such as --noconsole or --icon:
+
+python
+Copy code
+command = ["pyinstaller", "--onefile", "--noconsole", script_path]
+
+## 📝 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 📄 Contributing
+
+Feel free to open issues or pull requests if you find bugs or want to contribute enhancements. For major changes, please open an issue first to discuss what you would like to change.
