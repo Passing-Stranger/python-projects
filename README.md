@@ -117,7 +117,6 @@ Clone the Repository
 Clone this repository to your local machine:
 
 ```bash
-Copy code
 git clone https://github.com/yourusername/python-script-wrapper.git
 cd python-script-wrapper
 ```
