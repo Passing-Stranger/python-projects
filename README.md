@@ -30,7 +30,7 @@
 
 **Batch Image Resizer** is a Python script that allows you to select multiple images, resize them down by 50%, and save them with 100% quality. It also provides a loading bar and deletes the original images after resizing!
 
-## ✨ Features
+##  Features
 
 - Batch resize multiple images by 50%
 - 100% image quality preservation
@@ -38,7 +38,7 @@
 - Deletes original files after resizing
 - Simple file selection via a graphical interface (Tkinter)
 
-## 🚀 How to Use
+##  How to Use
 
 1. **Install required libraries:**
 
@@ -58,7 +58,7 @@
 
    A file dialog will prompt you to select the images you want to resize, and then another dialog will allow you to choose the output folder. After resizing, the original images will be deleted.
 
-## 📂 File Structure
+##  File Structure
 
 ```plaintext
 .
@@ -66,14 +66,14 @@
 └── README.md            # This file
 ```
 
-## 🛠️ Requirements
+##  Requirements
 
 - Python 3.x
 - Pillow (for image manipulation)
 - Tkinter (for file selection)
 - Tqdm (for progress bar)
 
-## 🌟 Example
+##  Example
 
 Here's how the progress looks when resizing and deleting images:
 
@@ -82,7 +82,7 @@ Resizing images: 100%|███████████████████�
 Deleting originals: 100%|█████████████████| 5/5 [00:01<00:00, 4files/s]
 ```
 
-## 🖼️ Output
+##  Output
 
 The resized images will be stored in the selected output folder with the same filenames as the original images.
 
@@ -92,14 +92,14 @@ Enjoy hassle-free image resizing! 🎉
 
 Welcome to the **Python Script Wrapper** project! This tool simplifies the process of converting multiple Python scripts into standalone executables using `PyInstaller`. Perfect for batch processing or automation tasks.
 
-## 🛠️ Features
+##  Features
 
 - **Batch Processing:** Convert multiple Python scripts into executables with a single command.
 - **Automated Execution:** Automate the process of calling `PyInstaller` for each script.
 - **Custom Configuration:** Easily adjust and configure `PyInstaller` options for your needs.
 - **Error Handling:** Provides feedback if scripts do not exist or if there are errors during conversion.
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -135,7 +135,7 @@ python wrapper.py
 
 This command will process each script listed in the scripts list and generate corresponding executables.
 
-## 💡 Usage
+##  Usage
 
 Edit wrapper.py to include the Python scripts you want to convert. By default, the script includes placeholders for script1.py, script2.py, and script3.py. Modify this list according to your needs.
 
@@ -151,7 +151,7 @@ def main():
             print(f"Script {script} does not exist.")
 ```
 
-## ⚙️ Customization
+##  Customization
 
 You can adjust the convert_to_exe function in wrapper.py to include additional PyInstaller options. For instance, you can change the --onefile flag to include other options such as --noconsole or --icon:
 
@@ -159,10 +159,10 @@ python
 Copy code
 command = ["pyinstaller", "--onefile", "--noconsole", script_path]
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## 📄 Contributing
+##  Contributing
 
 Feel free to open issues or pull requests if you find bugs or want to contribute enhancements. For major changes, please open an issue first to discuss what you would like to change.
